@@ -167,8 +167,47 @@ The concatination operator (+) concatination two string values together, returni
 
 // console.log("Hello" + 6);
 
-// 3. Swaping variable values...?
+// 3. Swaping variable values by thir variable...?
+
+var n1 = 5;
+var n2 = 10;
+var n3 = n2;  // So now, n3 = 10
+n2 = n1;
+n1 = n3;
+// console.log(n1);
+// console.log(n2);
+
+// 4. Swaping variables values without third variable...?
+
+var n4 = 10;
+var n5 = 5;
+n4 = n4 + n5;  // n4 = 15
+n5 = n4 -n5;   // n5 = 10;
+n4 = n4 - n5;  // n4 = 5;
+// console.log(n4);
+// console.log(n5);
+ 
+
+// Interview question:-
+
+// Difference between == or === ?
+
+/*
+In == it will checkig the value only but in === it will check the value as well as it's datatype also.
+*/
+
+var numOne = 5;
+var numTwo = "5";
+// console.log(numOne == numTwo);
+// console.log(numOne === numTwo);
 
 
+// Conditional turnary Operators:-
 
+/*
+The conditional (turnary) operator is the only Js Operatior only operator that takes three operands & It is the if else shorthand version.
+*/
 
+var age = 18;
+// (age >= 18) ? "You vote" : "You can't vote";
+// console.log((age >= 18) ? "You can vote" : "You can't vote");
