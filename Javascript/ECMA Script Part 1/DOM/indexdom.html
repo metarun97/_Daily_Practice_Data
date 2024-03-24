@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in Javascript</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+        .main-div{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(7, 7, 22);
+            display: grid;
+            place-items: center;
+          
+        }
+
+        .child{
+            margin-top: 30px;
+            font-size: 25px;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Part -->
+
+<div class="main-div">
+    <div class="child one">
+        <p>I am child one</p>
+    </div>
+    <div class="child two">
+        <p>I am child two</p>
+    </div>
+    <div class="child three">
+        <p>I am child three</p>
+    </div>
+</div>
+
+
+    <script>
+        // Javascript Part:-
+
+        /*
+        [Windows]
+        1. windows in the main container or we can say the global Object and operations related to entire browser window can be a part of window object.
+       => For ex the history or to find the url etc.
+
+        2. All the members like objects,methods or properties if they are part of window object then we do not refer the windown object.
+
+        3. Windows has methods,properties and object.ex setTimeout() or setInterval() are the methods,where as Document is the object of the Window and it also has screen object with properties describing the physical display.
+
+        */
+
+        /*
+        [DOM] 
+        1.Where as the DOM is the child of window object.
+
+        2. Where in the DOM we need to refer the document, if we want to use the document object,methods or properties.
+
+        3. Document is just the object of the global object that is window deals with the document,the HTML elements themselves.
+        */
+
+        /*
+        [BOM]
+
+        The BOM os the brwser object model which deals browser components aside from the document,like history,location,navigation and screen (as some others that very by browser). OR 
+        In simple meaning all the Window operations which comes under BOM are performed using BOM.
+
+        => alert/confirm/prompt are also the part of BOM.
+        */
+
+        /* 1. document.documentElement returns the element that is the root element of the document.
+          2. document.head
+          3. document.body
+          4. document.body.childNodes(include tab,enter and whiteSpace)
+          5. document.children(without text nodes,only Elements)
+          6. document.childNodes.length
+        */
+        // EXAMPLES:-
+ 
+        // alert(location.href);
+
+        // Example for Visit on a webpage:-
+
+        // if(confirm("You want to visit Google...?")){
+        //     location.href = "https://www.google.com/";
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
