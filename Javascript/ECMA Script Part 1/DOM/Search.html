@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Elements</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            background-color: rgb(25, 25, 54);
+            color: rgb(250, 198, 44);
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: rgb(250, 198, 44);
+            padding: 16px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Part -->
+
+    <!-- <p class="para">Plz like the vedio</p>
+    <p class="para">Plz share the vedio</p>
+    <p>Don't forget to subscribe my channel</p>
+    <h1 id="heading">Changed the content of the h1</h1> -->
+
+    <!-- <form action="">
+        <label for="">Male</label>
+        <input type="radio" name="gender" id="">
+        <label for="">Female</label>
+        <input type="radio" name="gender" id="">
+        <label for="">Male & Female</label>
+        <input type="radio" name="gender" id="">
+    </form> -->
+    <br>
+    <!-- <button onclick="ChangeContent()">Click Me!</button> -->
+
+<ul>
+    <li id="web-id">PHP</li>
+    <li>HTML</li>
+    <li class="web-id">CSS</li>
+    <li class="web-id">Javascript</li>
+</ul>
+
+    <script>
+        // How to search the elements and the references will see in it.
+
+        // function ChangeContent() {
+            // For id:-
+            // const headingChange = document.getElementById("heading");
+            // headingChange.innerHTML = "Hello Welcome learners."
+
+            // For class:-
+
+            // console.log(document.getElementsByClassName('para'));
+
+            // For tagname:-
+
+            // console.log(document.getElementsByTagName("p"));
+
+            // For byname:-
+
+            //  console.log(document.getElementsByName("gender"));
+
+            // For queryselector & queryselectorall:-
+
+            // Note => queryselector returns the first matching value whereas quaryselectorall() will return all the elements.
+
+            //  document.querySelector("#heading").innerHTML = "Changed!"
+            //  document.querySelector(".para").innerHTML = "Para date changed!!"
+                //   console.log(document.querySelectorAll(".para"));
+        // }
+
+// Difference between getelementbyId & queryselecor:-
+
+        // console.log(document.getElementById("web-id").innerHTML);
+        // console.log(document.querySelector("#web-id").innerHTML);
+        console.log(document.querySelector(".web-id").innerHTML);
+    </script>
+</body>
+
+</html>
